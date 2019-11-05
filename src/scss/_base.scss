@@ -14,20 +14,22 @@
 	border-bottom: 2px solid white;
 	.logo {
 		
-			background: url(/img/logo.png);
+		background: url(/img/logo.png);
 		
 	}
 
 	ul {
 		display: flex;
+		justify-content: center;
 
 		li {
-			padding: 10px;
+			padding: 15px;
 			text-transform: uppercase;
 			cursor: pointer;
 			a {
 				color: white;
 				text-decoration: none;
+				transition: all 0.5s ease;
 				&:hover {
 					text-decoration: underline;
 					color: gray;

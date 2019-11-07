@@ -1,21 +1,34 @@
+@font-face {
+	font-family: Damask;
+	src: url(/fonts/Swinging.ttf);
+}
+
+@font-face {
+	font-family: Bilal;
+	src: url(/fonts/Bilal.otf);
+}
+
 * {
 	list-style: none;
 	text-decoration: none;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
 }
 
-.carousel,
+
 .headerItems {
+	width: 1150px;
+	border-bottom: 2px solid rgb(255, 255, 255);
 	position: absolute;
-	top: 0;
-}
-
-.headerItems {
 	z-index: 1;
-	border-bottom: 2px solid white;
+	display: flex;
+
 	.logo {
-		
-		background: url(/img/logo.png);
-		
+		width: 218px;
+		height: 60px;
+		a{
+		background: url(/img/logo.png);}
+
 	}
 
 	ul {
@@ -26,22 +39,95 @@
 			padding: 15px;
 			text-transform: uppercase;
 			cursor: pointer;
+
 			a {
-				color: white;
+				color: rgb(255, 255, 255);
 				text-decoration: none;
-				transition: all 0.5s ease;
+				transition: all 0.7s ease;
+
 				&:hover {
-					text-decoration: underline;
+					text-decoration: underline overline;
 					color: gray;
 				}
 			}
-			
+
 		}
 
 	}
 }
 
-body {
-	font-family: roboto, sans-serif;
-	color: rgb(255, 255, 255);
+.welcome .section_text {
+	padding-top: 150px;
+}
+
+.section {
+	display: flex;
+	justify-content: space-between;
+	.section__pic {
+		overflow: hidden;
+		width: 50%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.section_text {
+		color: gray;
+		padding: 20px;
+
+width: 50%;
+		.section__caption {
+			padding-bottom: 10px;
+			font-family: Bilal;
+			font-size: 42px;
+			
+		}
+
+		.section__text {
+			font-size: 20px;
+		}
+	}
+}
+
+.mainCaption {
+	padding: 50px;
+	text-align: center;
+	font-family: Bilal;
+	color: black;
+	h1 {
+		font-size: 50px;
+		&::before{
+			font-family: Damask;
+			content: 'j';
+		}
+		&::after{
+			font-family: Damask;
+	
+			content: 'k';
+		}
+	}
+	
+}
+.latestWorks_items {
+	display: flex;
+	justify-content: space-between;
+	.latestWorks__item {
+		width: 230px;
+		height: 230px;
+		overflow: hidden;
+		img{
+			height: 100%;
+			width: 100%;
+			transition: all 1s ease;
+			&:hover{
+				opacity: 0.5;
+				transform: scale(1.1);
+			}
+		}
+		
+	}
+}
+.reverse {
+	flex-direction: row-reverse;
 }

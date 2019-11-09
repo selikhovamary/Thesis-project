@@ -29,7 +29,9 @@ link.classList.remove('opacity');
 pic.classList.remove('opacityImg')     
 var link = this.querySelector('.categoryLink');
 link.classList.add('opacity');
-
-
+link.addEventListener('transitionend', function(){
+    if (link.classList.contains('opacity')){
+        link.classList.add('hidden');}
+})
 })
 }

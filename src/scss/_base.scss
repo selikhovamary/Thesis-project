@@ -15,16 +15,15 @@
 	font-family: 'Times New Roman', Times, serif;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .headerItems {
+	border: 0 solid #000000b3;
 	transition: all 1s ease;
 
 	.headerNav {
-		border-bottom: 2px solid rgb(0, 0, 0);
-		display: flex;
-		justify-content: flex-end;
-		position: relative;
-		transition: all 1s ease;
-
 		.logo__pic {
 			width: 218px;
 			height: 117px;
@@ -41,6 +40,12 @@
 			}
 
 		}
+
+		.headerNavbar {
+			justify-content: flex-end;
+			display: flex;
+			transition: all 1s ease;
+		}
 	}
 
 	ul {
@@ -50,23 +55,23 @@
 		li {
 			padding: 15px;
 			text-transform: uppercase;
-			cursor: pointer;
-
-			a {
-				color: rgb(0, 0, 0);
-				text-decoration: none;
-				transition: all 0.7s ease;
-				font-size: larger;
-				font-weight: bolder;
-
-				&:hover {
-					text-decoration: underline overline;
-					color: gray;
-				}
-			}
-
 		}
 
+	}
+}
+
+a {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	transition: all 0.7s ease;
+	font-size: larger;
+	font-weight: bolder;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline overline;
+		color: gray;
 	}
 }
 
@@ -77,9 +82,25 @@
 	.section__pic {
 		overflow: hidden;
 		width: 50%;
+		position: relative;
+
+		.categoryLink {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			z-index: 1;
+			text-transform: uppercase;
+			letter-spacing: 1em;
+			transition: all 1s ease;
+
+		}
 
 		img {
 			width: 100%;
+			transition: opacity 1s ease;
 		}
 	}
 
@@ -91,17 +112,17 @@
 		flex-flow: column;
 		justify-content: center;
 
-		.section__caption {
-			padding-bottom: 10px;
-			font-family: Bilal;
-			font-size: 42px;
-
-		}
-
 		.section__text {
 			font-size: 20px;
 		}
 	}
+}
+
+.section__caption {
+	padding-bottom: 10px;
+	font-family: Bilal;
+	font-size: 42px;
+
 }
 
 .mainCaption {
@@ -190,4 +211,23 @@
 
 .bg {
 	background: #fffc;
+}
+
+.border {
+	border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.hidden {
+	display: none;
+}
+
+.opacity {
+	opacity: 0;
+}
+
+.opacityImg {
+	opacity: 0.3;
+}
+.underText:hover {
+	color: black;
 }

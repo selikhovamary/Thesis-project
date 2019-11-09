@@ -1,11 +1,11 @@
 @font-face {
 	font-family: Damask;
-	src: url(/fonts/Nymphette.ttf);
+	src: url(../fonts/Nymphette.ttf);
 }
 
 @font-face {
 	font-family: Bilal;
-	src: url(/fonts/Bilal.otf);
+	src: url(../fonts/Bilal.otf);
 }
 
 * {
@@ -27,18 +27,13 @@ a:hover {
 		.logo__pic {
 			width: 218px;
 			height: 117px;
-			background: url(/img/logo.png);
+			background: url(../img/logo.png);
 			background-repeat: no-repeat;
 			background-position: top;
 			background-size: 100px;
 			position: absolute;
 			left: 5%;
 			z-index: 2;
-
-			a {
-				background: url(/img/logo.png);
-			}
-
 		}
 
 		.headerNavbar {

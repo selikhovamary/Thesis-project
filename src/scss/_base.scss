@@ -7,6 +7,7 @@
 	font-family: Bilal;
 	src: url(../fonts/Bilal.otf);
 }
+
 @font-face {
 	font-family: OrangeJ;
 	src: url(../fonts/orange.ttf);
@@ -18,10 +19,8 @@
 	box-sizing: border-box;
 	font-family: 'Times New Roman', Times, serif;
 }
-
 a:hover {
-	text-decoration: none;
-}
+color: black;  }
 
 .logo__pic {
 	width: 218px;
@@ -31,7 +30,6 @@ a:hover {
 	background-position: top;
 	background-size: 100px;
 	position: absolute;
-	left: 5%;
 	z-index: 2;
 }
 
@@ -70,7 +68,6 @@ a {
 
 	&:hover {
 		text-decoration: underline overline;
-		color: gray;
 	}
 }
 
@@ -227,20 +224,50 @@ a {
 	opacity: 0.3;
 }
 
-.underText:hover {
-	color: black;
-}
-
 
 // footer 
 .footer {
 	margin-top: 60px;
-	background: gray;
 	position: relative;
 	border-top: 2px solid rgb(0, 0, 0);
 
 	.footerItems {
 		position: relative;
+		padding: 20px;
+
+
+		p {
+			text-align: start;
+			padding: 0;
+			font-size: 20px;
+		}
+
+		.icons {
+			display: flex;
+
+			a {
+				margin-right: 30px;
+				background: url(/img/sprite.png);
+				width: 50px;
+				height: 50px;
+			}
+
+			.inst {
+				background-position: -223px -22px;
+			}
+
+			.vk {
+				background-position: -290px -23px;
+			}
+
+			.tel {
+				background-position: -89px -155px;
+			}
+
+			.email {
+				background-position: -156px -155px;
+			}
+		}
 
 		.logo {
 			.logo__pic {
@@ -249,6 +276,7 @@ a {
 		}
 	}
 }
+
 //button
 
 .back_to_top {
@@ -265,17 +293,18 @@ a {
 	border: 2px solid black;
 	border-radius: 20%;
 	display: none;
+
 	i {
 		position: relative;
-	top: 15%;
-	color: black;
+		top: 15%;
+		color: black;
 	}
-  }
-  
-  .back_to_top:hover {
+}
+
+.back_to_top:hover {
 	background: #e9ebec;
-  }
-  
-  .back_to_top-show {
+}
+
+.back_to_top-show {
 	display: block;
-  }
+}

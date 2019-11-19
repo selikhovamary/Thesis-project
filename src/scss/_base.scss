@@ -22,6 +22,9 @@
 a:hover {
 color: black;  }
 
+.carousel__img{
+	width: 100%;
+}
 .logo__pic {
 	width: 218px;
 	height: 100px;
@@ -155,7 +158,6 @@ a {
 
 		img {
 			height: 100%;
-			width: 100%;
 			transition: all 1s ease;
 
 			&:hover {

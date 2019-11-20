@@ -2,6 +2,8 @@ var navbar = document.querySelector('.headerItems')
 var navbarUl = document.querySelector('.headerNavbar');
 var categories = document.querySelector('.photoCategories')
 var sectionPic = document.querySelectorAll('.section__pic')
+var burgerButton = document.querySelector('.burger')
+var burgerMenu = document.querySelector('.burgerMenu')
 
 
 window.addEventListener('scroll', function(){
@@ -62,3 +64,7 @@ link.addEventListener('transitionend', function(){
   goTopBtn.addEventListener('click', backToTop);
 })();
 //hamb
+burgerButton.addEventListener('click', function(){
+  burgerMenu.classList.toggle('hidden')
+  setTimeout(function(){burgerMenu.classList.toggle('opacity')}, 100); 
+})

@@ -6,10 +6,10 @@ var sectionPic = document.querySelectorAll('.section__pic')
 
 window.addEventListener('scroll', function(){
 if (pageYOffset >= 10) {
-    navbar.classList.add('bg','border');
+    navbar.classList.add('bg','border', 'fixed');
     navbarUl.classList.remove('border')
 } else if (navbar.classList.contains('bg')) {
-    navbar.classList.remove('bg', 'border');
+    navbar.classList.remove('bg', 'border', 'fixed');
     navbarUl.classList.add('border')
 
 }
@@ -61,3 +61,4 @@ link.addEventListener('transitionend', function(){
   window.addEventListener('scroll', trackScroll);
   goTopBtn.addEventListener('click', backToTop);
 })();
+//hamb

@@ -77,3 +77,28 @@
         height: auto;
     }
 }
+
+.studio{
+    height: 3650px;
+    @media (max-width: 1199px) {
+        height: 3020px;
+    }
+
+    @media (max-width: 991px) {
+        height: 2350px;
+    }
+
+    @media (max-width: 668px) {
+        height: 2100px;
+    }
+    @media (max-width: 575px) {
+        height: 3700px;
+    }
+    @media (max-width: 441px) {
+        height: 3350px;
+    }
+
+    @media (max-width: 395px) {
+        height: auto;
+    }
+}

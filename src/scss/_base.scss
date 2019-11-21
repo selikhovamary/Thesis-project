@@ -8,11 +8,6 @@
 	src: url(../fonts/Bilal.otf);
 }
 
-@font-face {
-	font-family: OrangeJ;
-	src: url(../fonts/orange.ttf);
-}
-
 * {
 	list-style: none;
 	text-decoration: none;
@@ -36,7 +31,13 @@ a:hover {
 	background-position: top;
 	background-size: 100px;
 	position: absolute;
-	z-index: 2;
+	z-index: 100000;
+
+	@media (max-width: 636px) {
+		background-size: 70px;
+		width: 100px;
+		height: 75px;
+	}
 }
 
 .headerItems {
@@ -151,6 +152,10 @@ a {
 	font-family: Bilal;
 	font-size: 42px;
 
+	@media (max-width: 421px) {
+		font-size: 25px;
+	}
+
 }
 
 .mainCaption {
@@ -158,6 +163,10 @@ a {
 	text-align: center;
 	font-family: Bilal;
 	color: black;
+
+	@media (max-width: 566px) {
+		padding: 0px;
+	}
 
 	h1 {
 		font-size: 50px;
@@ -172,6 +181,10 @@ a {
 
 			content: '2';
 		}
+
+		@media (max-width: 421px) {
+			font-size: 30px;
+		}
 	}
 
 }
@@ -185,6 +198,8 @@ a {
 .latestWorks_items {
 	display: flex;
 	justify-content: space-between;
+	@media (max-width: 375px) {
+flex-wrap: wrap;	}
 
 	.latestWorks__item {
 		width: 230px;
@@ -199,6 +214,12 @@ a {
 		@media (max-width: 636px) {
 			width: 100px;
 			height: 100px;
+		}
+
+		@media (max-width: 431px) {
+			width: 80px;
+			height: 80px;
+			margin-bottom: 10px;
 		}
 
 		img {
@@ -232,6 +253,7 @@ a {
 
 	img {
 		width: 20%;
+
 	}
 
 	h1 {
@@ -243,8 +265,15 @@ a {
 			font-size: 40px;
 		}
 
-		@media (max-width: 992px) {
+		@media (max-width: 711px) {
 			font-size: 30px;
+		}
+
+		@media (max-width: 566px) {
+			font-size: 20px;
+		}
+		@media (max-width: 566px) {
+			font-size: 10px;
 		}
 
 	}
@@ -253,6 +282,13 @@ a {
 		color: #fff;
 		text-transform: uppercase;
 		letter-spacing: 1em;
+
+		@media (max-width: 566px) {
+			font-size: 10px;
+		}
+		@media (max-width: 566px) {
+			font-size: 5px;
+		}
 	}
 }
 
@@ -279,29 +315,46 @@ a {
 
 			a {
 				margin-right: 30px;
-				background: url(/img/sprite.png);
+				background: url(../img/sprite.png);
 				width: 50px;
 				height: 50px;
 
 				@media (max-width: 636px) {
 					margin-right: 15px;
 				}
+				@media (max-width: 431px) {
+					background-size: 1160%;
+					width: 30px;
+					height: 30px;
+				}
 			}
 
 			.inst {
 				background-position: -223px -22px;
+				@media (max-width: 431px) {
+					background-position: -138px -13.5px;
+				}
 			}
 
 			.vk {
 				background-position: -290px -23px;
+				@media (max-width: 431px) {
+					background-position: -179.5px -15px;
+				}
 			}
 
 			.tel {
 				background-position: -89px -155px;
+				@media (max-width: 431px) {
+					background-position: -55px -97px;
+				}
 			}
 
 			.email {
 				background-position: -156px -155px;
+				@media (max-width: 431px) {
+					background-position: -97px -97px;
+				}
 			}
 		}
 
@@ -310,12 +363,17 @@ a {
 				left: 80%;
 
 				@media (max-width: 636px) {
-					left: 70%;
+					left: 68%;
+					top: 38%;
+				}
+				@media (max-width: 375px) {
+					display: none;
 				}
 			}
 		}
 	}
 }
+
 
 //button
 
@@ -323,7 +381,7 @@ a {
 	position: fixed;
 	bottom: 30px;
 	right: 30px;
-	z-index: 9999;
+	z-index: 999999;
 	width: 50px;
 	height: 50px;
 	text-align: bottom;
@@ -334,10 +392,21 @@ a {
 	border-radius: 20%;
 	display: none;
 
+	@media (max-width: 566px) {
+		bottom: 20px;
+		right: 10px;
+		width: 40px;
+		height: 40px;
+	}
+
 	i {
 		position: relative;
 		top: 15%;
 		color: black;
+
+		@media (max-width: 566px) {
+			top: 10%;
+		}
 	}
 }
 
@@ -354,37 +423,44 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	cursor: pointer;
-    margin: 10px;
+	margin: 10px;
 	margin-right: 40px;
 	display: none;
 	transition: all 2s ease;
+
 	@media (max-width: 636px) {
 		display: flex;
 	}
+
 	span {
-		border: 3px solid #000;
+		border: 2px solid #000;
 		border-radius: 10px;
 		width: 40px;
 		margin: 3px;
 		background: black;
 	}
 }
+
 .hambMenu {
-	border: 3px solid gray;
+	border: 2px solid gray;
 
 }
-.burgerMenu{
+
+.burgerMenu {
 	opacity: 1;
 	transition: all 2s ease;
 }
-.headerItems .burgerItems {
-flex-direction: column;
-align-items: center;
-@media (max-width: 636px){
-	display: flex;
 
+.headerItems .burgerItems {
+	flex-direction: column;
+	align-items: center;
+
+	@media (max-width: 636px) {
+		display: flex;
+
+	}
 }
-}
+
 .displayFlex {
 	display: flex;
 }

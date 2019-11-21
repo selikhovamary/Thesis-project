@@ -65,6 +65,9 @@ link.addEventListener('transitionend', function(){
 })();
 //hamb
 burgerButton.addEventListener('click', function(){
+  // var span = document.querySelectorAll('.burger > span');
+  // span.forEach.classList.toggle('hambMenu')
+  // console.log(span)
   burgerMenu.classList.toggle('hidden')
   setTimeout(function(){burgerMenu.classList.toggle('opacity')}, 100); 
 })

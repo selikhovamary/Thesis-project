@@ -1,10 +1,9 @@
 var navbar = document.querySelector('.headerItems')
 var navbarUl = document.querySelector('.headerNavbar');
-var categories = document.querySelector('.photoCategories')
-var sectionPic = document.querySelectorAll('.section__pic')
+var sectionPic = document.querySelectorAll('.photoCategories .section__pic')
 var burgerButton = document.querySelector('.burger')
 var burgerMenu = document.querySelector('.burgerMenu')
-
+console.log(sectionPic)
 
 window.addEventListener('scroll', function(){
 if (pageYOffset >= 10) {

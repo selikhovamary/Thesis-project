@@ -1,50 +1,22 @@
+.albums {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media (max-width: 421px) {
+        flex-direction: column;
+	}
+}
 .album {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: 3100px;
-
-    @media (max-width: 1199px) {
-        height: 2700px;
-    }
-
-    @media (max-width: 991px) {
-        height: 2100px;
-    }
-
-    @media (max-width: 668px) {
-        height: 1800px;
-    }
-
-    @media (max-width: 575px) {
-        height: 3300px;
-    }
-
-    @media (max-width: 502px) {
-        height: 2900px;
-    }
-
-    @media (max-width: 441px) {
-        height: 2600px;
-    }
-
-    @media (max-width: 395px) {
-        height: auto;
-    }
+    width: 32%;
+    @media (max-width: 421px) {
+        width: 100%;
+	}
 
     .album__item {
         margin-bottom: 20px;
-        width: 32%;
         overflow: hidden;
-
-        @media (max-width: 575px) {
-            width: 45%;
-        }
-
-        @media (max-width: 395px) {
-            width: 100%;
-        }
-
         img {
             width: 100%;
             transition: all 1s ease;
@@ -54,61 +26,4 @@
             }
         }
     }
-}
-
-.portrait {
-    height: 3700px;
-
-    @media (max-width: 991px) {
-        height: 2400px;
-    }
-
-    @media (max-width: 668px) {
-        height: 2100px;
-    }
-
-    @media (max-width: 575px) {
-        height: 3700px;
-    }
-
-    @media (max-width: 441px) {
-        height: 3400px;
-    }
-
-    @media (max-width: 395px) {
-        height: auto;
-    }
-}
-
-.studio {
-    height: 3650px;
-
-    @media (max-width: 1199px) {
-        height: 3020px;
-    }
-
-    @media (max-width: 991px) {
-        height: 2350px;
-    }
-
-    @media (max-width: 668px) {
-        height: 2100px;
-    }
-
-    @media (max-width: 575px) {
-        height: 3700px;
-    }
-
-    @media (max-width: 441px) {
-        height: 3350px;
-    }
-
-    @media (max-width: 395px) {
-        height: auto;
-    }
-}
-
-.portfolio{
-    flex-direction: column;
-    align-items: center;
 }

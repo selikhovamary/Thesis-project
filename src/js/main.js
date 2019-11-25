@@ -1,2 +1,2 @@
 //= base.js
-//= vendor/vendor.js
+//= vendor/owl-carousel.js

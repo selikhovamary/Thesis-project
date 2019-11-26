@@ -1,16 +1,20 @@
 .prices {
     display: flex;
     justify-content: space-between;
-
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
     .kit {
         padding: 20px;
+        margin-bottom: 20px;
         width: 30%;
         text-align: center;
         background-color: #f3f3f37a;
         display: flex;
         flex-direction: column;
-
-        // justify-content: space-between;
+        @media (max-width: 768px) {
+            width: 100%;
+        }
         .kitPic {
             img {
                 width: 100%;

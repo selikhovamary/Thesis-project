@@ -9,6 +9,7 @@
         background-color: #f3f3f37a;
         display: flex;
         flex-direction: column;
+
         // justify-content: space-between;
         .kitPic {
             img {
@@ -20,6 +21,7 @@
         .kitPrice {
             ul {
                 padding-left: 0;
+
                 li {
                     font-size: 20px;
                     padding: 10px;
@@ -28,5 +30,36 @@
         }
     }
 }
-.kit>*:last-child{
-margin-block-start: auto;}
+
+.kit>*:last-child {
+    margin-block-start: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        margin: 10px;
+        padding: 5px;
+        width: 100%;
+        border: 2px solid gray;
+        border-radius: 20px;
+        height: 70px;
+        font-size: 30px;
+    }
+}
+button {
+    margin: 20px;
+    padding: 14px;
+    width: 30%;
+    border: 3px solid #808080;
+    border-radius: 20px;
+    height: 80px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    &:hover {
+        background: rgb(233, 231, 231);
+
+    }
+}

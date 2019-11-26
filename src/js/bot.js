@@ -10,6 +10,14 @@ sendMsg.addEventListener('click', function () {
         var botLink = 'https://api.telegram.org/bot892587873:AAFw-auKXmBAvQ0x77e-hty-BvS-faOHS0Y/sendMessage?chat_id=214831481&text=' + msg;
         fetch(botLink);
         clearInputs();
+        sendMsg.classList.add('success');
+        sendMsg.innerHTML = '&#10004;';
+        setTimeout(function(){
+            if (sendMsg.classList.contains('success')){
+                sendMsg.classList.remove('success');
+                sendMsg.innerHTML = 'Send';
+            }
+        }, 2000)
     } else {
         checkInputs()
     }
@@ -42,3 +50,4 @@ function deleteError(){
         }
     }
 }
+

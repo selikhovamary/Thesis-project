@@ -1,17 +1,29 @@
-.prices{
+.prices {
     display: flex;
     justify-content: space-between;
-    .kit{
+
+    .kit {
         padding: 20px;
         width: 30%;
         text-align: center;
-        background-color: rgb(243, 243, 243);
-        // border: 2px solid black;
-        // border-radius: 20px;
+        background-color: #f3f3f37a;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         .kitPic {
-            img{
+            img {
                 width: 100%;
                 margin-bottom: 20px;
+            }
+        }
+
+        .kitPrice {
+            ul {
+                padding-left: 0;
+                li {
+                    font-size: 20px;
+                    padding: 10px;
+                }
             }
         }
     }

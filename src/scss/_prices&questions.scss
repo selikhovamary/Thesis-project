@@ -9,7 +9,7 @@
         background-color: #f3f3f37a;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        // justify-content: space-between;
         .kitPic {
             img {
                 width: 100%;
@@ -28,3 +28,5 @@
         }
     }
 }
+.kit>*:last-child{
+margin-block-start: auto;}

@@ -24,7 +24,7 @@ a:hover {
 }
 
 .logo__pic {
-	width: 218px;
+	width: 150px;
 	height: 100px;
 	background: url(../img/logo.png);
 	background-repeat: no-repeat;
@@ -325,9 +325,9 @@ a {
 				}
 
 				@media (max-width: 431px) {
-					background-size: 1160%;
-					width: 30px;
-					height: 30px;
+					background-size: 1121%;
+					width: 31px;
+					height: 40px;
 				}
 			}
 
@@ -367,7 +367,9 @@ a {
 		.logo {
 			.logo__pic {
 				left: 80%;
-
+				@media (max-width: 818px) {
+					left: 70%;
+				}
 				@media (max-width: 636px) {
 					left: 68%;
 					top: 38%;

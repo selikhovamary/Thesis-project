@@ -42,19 +42,24 @@
 .kit>*:last-child {
     margin-block-start: auto;
 }
-.faq{
+
+.form {
     padding: 0 150px 0 150px;
+
     @media (max-width: 818px) {
         padding: 0 80px 0 80px;
     }
+
     @media (max-width: 636px) {
         padding: 0 20px 0 20px;
 
     }
+
     @media (max-width: 375px) {
         padding: 0;
     }
 }
+
 form {
     display: flex;
     flex-direction: column;
@@ -92,8 +97,48 @@ form {
 }
 
 .success {
-    // content: "\2714";
     content: " ";
 
     color: green;
+}
+
+.questions{
+    display: flex;
+}
+.questionsColumn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.question {
+    text-align: center;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid #808080;
+    height: 110px;
+    transition: all 0.5s ease;
+    position: relative;
+    background-color: #f3f3f37a;
+h1 {
+    font-size: 25px;
+    padding: 10px;}
+    span {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        cursor: pointer;
+        transition: all 1s ease;
+        font-size: 20px;
+        color: rgb(71, 69, 69);
+    }
+    .answer {
+        padding: 25px;
+    }
+}
+.quesHeight {
+    height: 210px;
+}
+.rotateIcon {
+    transform: rotate(45deg);
 }

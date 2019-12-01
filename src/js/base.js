@@ -85,17 +85,17 @@ $(document).ready(function () {
     autoplayTimeout: 2000,
     autoplayHoverPause: true,
     responsiveClass: true,
-  responsive: {
-    0: {
-      items: 2.5,
-    },
-    320: {
-      items: 3.5,
-    },
-    765: {
-      items: 4.5
+    responsive: {
+      0: {
+        items: 2.5,
+      },
+      320: {
+        items: 3.5,
+      },
+      765: {
+        items: 4.5
+      }
     }
-  }
   });
   $('.play').on('click', function () {
     owl.trigger('play.owl.autoplay', [1000])
@@ -104,3 +104,23 @@ $(document).ready(function () {
     owl.trigger('stop.owl.autoplay')
   })
 });
+
+// questions
+var question = document.querySelectorAll('.glyphicon');
+for (i = 0; i < question.length; i++) {
+  question[i].addEventListener('click', showAnswer);
+
+  function showAnswer() {
+    var answer = this.parentElement.querySelector('.answer');
+    if (!(answer.classList.contains('hidden'))) {
+      answer.classList.add('hidden')
+    }
+    this.classList.toggle('rotateIcon')
+    this.parentElement.classList.toggle('quesHeight')
+    this.parentElement.addEventListener('transitionend', function () {
+      if (this.classList.contains('quesHeight')) {
+        answer.classList.remove('hidden');
+      }
+    })
+  }
+}

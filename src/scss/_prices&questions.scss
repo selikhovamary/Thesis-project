@@ -121,16 +121,12 @@ form {
     padding: 10px;
     margin: 20px;
     border: 2px solid #808080;
-    height: 110px;
+    height: 125px;
     transition: all 0.5s ease;
     position: relative;
     background-color: #f3f3f37a;
 
     @media (max-width: 992px) {
-        font-size: 18px;
-    }
-
-    @media (max-width: 480px) {
         font-size: 15px;
     }
 
@@ -140,8 +136,6 @@ form {
 
         @media (max-width: 421px) {
             padding: 0;
-            font-size: 20px;
-
         }
     }
 

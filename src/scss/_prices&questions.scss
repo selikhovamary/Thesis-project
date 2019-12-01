@@ -102,10 +102,15 @@ form {
     color: green;
 }
 
-.questions{
+.questions {
     display: flex;
+
+    @media (max-width: 992px) {
+        flex-direction: column;
+    }
 }
-.questionsColumn{
+
+.questionsColumn {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -120,9 +125,26 @@ form {
     transition: all 0.5s ease;
     position: relative;
     background-color: #f3f3f37a;
-h1 {
-    font-size: 25px;
-    padding: 10px;}
+
+    @media (max-width: 992px) {
+        font-size: 18px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 25px;
+        padding: 10px;
+
+        @media (max-width: 421px) {
+            padding: 0;
+            font-size: 20px;
+
+        }
+    }
+
     span {
         position: absolute;
         top: 8px;
@@ -132,13 +154,24 @@ h1 {
         font-size: 20px;
         color: rgb(71, 69, 69);
     }
+
     .answer {
         padding: 25px;
+
+        @media (max-width: 480px) {
+            padding: 10px 0 0 0;
+        }
     }
 }
+
 .quesHeight {
     height: 210px;
+
+    @media (max-width: 1200px) {
+        height: 250px;
+    }
 }
+
 .rotateIcon {
     transform: rotate(45deg);
 }

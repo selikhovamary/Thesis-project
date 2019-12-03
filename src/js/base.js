@@ -64,9 +64,7 @@ for (i = 0; i < sectionPic.length; i++) {
 })();
 //hamb
 burgerButton.addEventListener('click', function () {
-  // var span = document.querySelectorAll('.burger > span');
-  // span.forEach.classList.toggle('hambMenu')
-  // console.log(span)
+  burgerButton.classList.toggle('transform')
   burgerMenu.classList.toggle('hidden')
   setTimeout(function () {
     burgerMenu.classList.toggle('opacity')
